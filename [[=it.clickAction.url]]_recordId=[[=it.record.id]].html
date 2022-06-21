@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<!-- This website/webapp was created in Softr. https://www.softr.io -->
+<!-- Last Published: Fri, June 17 2022 08:37:53 -->
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi, shrink-to-fit=no" />
+
+        
+        
+        
+
+        
+        
+
+        <link rel="icon" type="image/x-icon" href="https://softr-prod.imgix.net/applications/8f7af9fb-a550-425d-b327-48195c193a5f/assets/c870e998-d79a-414a-8577-5bb4e5b7464d.svg?rnd=1622671497214" />
+
+        
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet">
+
+        <style type="text/css">
+
+            html {
+                scroll-behavior: smooth;
+                font-size: 16px;
+                overflow-x: hidden;
+            }
+
+            body {
+              overflow-x: hidden;
+            }
+
+            .container {
+                max-width: 100%;
+            }
+
+            @media (min-width: 576px) {
+                .container {
+                    max-width: 540px;
+                }
+            }
+
+            @media (max-width: 576px) {
+                .navbar-brand img {
+                    max-width: 15rem!important;
+                }
+            }
+
+            @media (min-width: 768px) {
+                .container {
+                    max-width: 720px;
+                }
+            }
+
+            @media (min-width: 992px) {
+                .container {
+                    max-width: 960px;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .container {
+                    max-width: 1140px;
+                }
+            }
+
+            p, h1, h2, h3, h4, h5, small { white-space: pre-line; }
+
+            @media screen and (max-width: 768px) {
+              input, select, textarea {
+                font-size: 16px !important;
+              }
+            }
+
+            h1.sw-font-family-default,
+            h2.sw-font-family-default {
+                font-family: "Open Sans";
+            }
+
+            h1.sw-font-weight-default,
+            h2.sw-font-weight-default {
+                font-weight: 600;
+            }
+
+            h1.sw-text-color-default,
+            h2.sw-text-color-default {
+                color: #222c2d;
+            }
+
+            section.sw-font-family-default,
+            header.sw-font-family-default,
+            nav.sw-font-family-default,
+            footer.sw-font-family-default,
+            div.sw-font-family-default,
+            span.sw-font-family-default,
+            small.sw-font-family-default,
+            pre.sw-font-family-default,
+            p.sw-font-family-default,
+            b.sw-font-family-default,
+            li.sw-font-family-default,
+            ul.sw-font-family-default,
+            a.sw-font-family-default,
+            h3.sw-font-family-default,
+            h4.sw-font-family-default,
+            h5.sw-font-family-default,
+            h6.sw-font-family-default {
+                font-family: "Open Sans";
+            }
+
+            span.sw-font-weight-default,
+            li.sw-font-weight-default span,
+            small.sw-font-weight-default,
+            li.sw-font-weight-default small,
+            pre.sw-font-weight-default,
+            p.sw-font-weight-default,
+            h3.sw-font-weight-default,
+            h4.sw-font-weight-default,
+            h5.sw-font-weight-default,
+            h6.sw-font-weight-default {
+                font-weight: 300;
+            }
+
+            span.sw-text-color-default,
+            li.sw-text-color-default span,
+            small.sw-text-color-default,
+            li.sw-text-color-default small,
+            pre.sw-text-color-default,
+            p.sw-text-color-default,
+            div.sw-text-color-default,
+            h3.sw-text-color-default,
+            h4.sw-text-color-default,
+            h5.sw-text-color-default,
+            h6.sw-text-color-default {
+                color: #222c2d;
+            }
+
+            input.sw-font-family-default,
+            textarea.sw-font-family-default {
+                font-family: "Open Sans";
+            }
+
+            input.sw-font-weight-default,
+            textarea.sw-font-weight-default {
+                font-weight: 300;
+            }
+
+            .sw-font-family-default::-webkit-input-placeholder,
+            .sw-font-family-default::-moz-placeholder,
+            .sw-font-family-default:-ms-input-placeholder,
+            .sw-font-family-default:-moz-placeholder {
+                font-family: "Open Sans";
+            }
+
+            .sw-font-family-default::-webkit-input-placeholder,
+            .sw-font-family-default::-moz-placeholder,
+            .sw-font-family-default:-ms-input-placeholder,
+            .sw-font-family-default:-moz-placeholder {
+                font-weight: 300;
+            }
+
+            .sw-text-color-default[data-element='button'] {
+                color: #ffffff;
+            }
+
+            .sw-background-color-default[data-element='button'] {
+                background-color: #29d2df;
+            }
+
+            .sw-border-radius-default[data-element='button'] {
+                border-radius: .25rem;
+            }
+
+            
+        </style>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
+        <style>
+            .made-with-softr {
+              position: fixed;
+              z-index: 9999999;
+              left: 20px;
+              bottom: 20px;
+            }
+
+            .made-with-softr a {
+              width: 125px;
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 19px;
+              box-shadow: 0 0 4px rgb(0 0 0 / 15%);
+              border-radius: 4px;
+              z-index: 9999999;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 6px 8px;
+              color: #1f2b3f;
+              background: #ffffff;
+              box-sizing: content-box;
+              text-decoration: none;
+              font-family: 'Nunito Sans', sans-serif;
+            }
+
+            .made-with-softr a .made-with {
+              margin-left: 2px;
+            }
+
+            .made-with-softr a img {
+                width: 16px;
+            }
+
+            .made-with-softr .softr-word {
+              color: #3b85db;
+            }
+
+            .made-with-softr .dark-theme {
+              color: #ffffff;
+              background: #1f2b3f;
+            }
+
+            .made-with-softr .dark-theme .softr-word {
+              color: #ffb30b;
+            }
+        </style>
+
+        
+
+        
+
+        
+
+        <style>
+ .sw-font-size-5xl {
+    font-size: 3rem;
+  }
+  .sw-font-size-4xl {
+    font-size: 2.25rem;
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    if($(window).width() < 768) {
+       $('h1.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('h1.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('h2.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('h2.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('div.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('div.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('p.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('p.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+       $('span.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+       $('span.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+    }
+  });
+</script>
+
+        
+
+        
+        
+
+        <script>
+            /** Bugfix on multiple ?recordId= issue **/
+            setInterval(function() {
+                $('section a').each(function() {
+                    const href = $(this).attr('href');
+                    if(href && href.includes('?recordId=')) {
+                        const countOfRecords = (href.match(/\?recordId=/g) || []).length;
+                        if(countOfRecords > 1) {
+                            const index = href.lastIndexOf('?recordId=');
+                            const cleanedHref = href.substring(0, index);
+                            $(this).attr('href', cleanedHref);
+                        }
+                    }
+                });
+            }, 1000);
+        </script>
+
+        <script>
+            /** Image lineup on mobile **/
+            document.addEventListener("DOMContentLoaded", function() {
+                function changeImageDirectionsOnMobile() {
+
+                    const classListSection = $('body>div>section').attr('class').split(/\s+/);
+                    const textClassSection = classListSection.find(cls => cls.startsWith('feature'));
+
+                    const classListHeader = $('body>div>header').attr('class').split(/\s+/);
+                    const textClassHeader = classListHeader.find(cls => cls.startsWith('hero'));
+
+                    /*If FEATURE block*/
+                    if (textClassSection) {
+                        findRowsWidthImageAndReverse(textClassSection)
+                    }
+
+                    /*If HERO block*/
+                    if (textClassHeader) {
+                        findRowsWidthImageAndReverse(textClassHeader)
+                    }
+                }
+
+                function findRowsWidthImageAndReverse(textClass) {
+                    const rowsWithImages = $('.' + textClass + ' .row.align-items-center').has('img').toArray();
+                    const rowsWithLeftSideImages = rowsWithImages.filter(row => {
+                        return $(row).children().first().children().first().prop("tagName") === 'IMG';
+                    });
+
+
+                    rowsWithLeftSideImages.forEach(row => {
+                        if ($(window).width() <= 768) {
+                            row.classList.add('flex-column-reverse')
+                        }
+                    });
+                }
+
+                if ($(window).width() <= 768) {
+                    changeImageDirectionsOnMobile();
+                }
+            });
+
+            /** BG Size on mobile **/
+            document.addEventListener("DOMContentLoaded", function() {
+                if($(window).width() <= 768) {
+                    var element = $('section.sw-background-size-auto, header.sw-background-size-auto');
+                    element.removeClass('sw-background-size-auto');
+                    element.css('background-size', 'cover');
+
+                    $('section.sw-background-attachment-fixed, header.sw-background-attachment-fixed').removeClass('sw-background-attachment-fixed');
+                }
+            });
+
+            /** Disable zoom on mobile **/
+            document.addEventListener("DOMContentLoaded", function() {
+               if($(window).width() <= 768) {
+                   $('input.sw-font-size-s').removeClass('sw-font-size-s');
+                   $('textarea.sw-font-size-s').removeClass('sw-font-size-s');
+                   $('select.sw-font-size-s').removeClass('sw-font-size-s');
+               }
+           });
+
+        </script>
+    </head>
+
+    <body>
+
+        <div data-appid="f165e56b-ac58-475b-a490-c6e08359a817" data-pageId="" class="content"><style type="text/css">
+
+    @font-face {
+        font-family: 'Poppins';
+        src: url('https://www.topduct.tk/static/assets/fonts/Poppins/Poppins-Regular.eot'),
+        url('https://www.topduct.tk/static/assets/fonts/Poppins/Poppins-Regular.eot?') format('embedded-opentype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: 'Inter';
+        src: url('https://www.topduct.tk/static/assets/fonts/Inter/Inter-Regular.eot'),
+        url('https://www.topduct.tk/static/assets/fonts/Inter/Inter-Regular.eot?') format('embedded-opentype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    #block-404 {
+        background: url("assets/images/shapes.svg");
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 60px;
+        max-width: 100%;
+    }
+
+    .error-text-wrapper {
+        margin: auto 0;
+    }
+
+    .company-title::before {
+        content: "";
+        display: inline-flex;
+        background-image: url("assets/images/softr-title-logo.svg");
+        background-repeat: no-repeat;
+        height: 34px;
+        width: 123px;
+        margin-bottom: 16px;
+    }
+
+    .error-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 42px;
+        margin-bottom: 22px;
+    }
+
+    .error-text {
+        max-width: 441px;
+        font-family: 'Inter' , sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 22px;
+    }
+
+    .home-button {
+        height: 40px;
+        border-radius: 8px;
+        padding: 9px 24px;
+        border: none;
+        background-color: #212121;
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 22px;
+        color: #ffffff;
+    }
+
+    .home-button:hover {
+        box-shadow: 0 2px 8px rgba(40, 25, 45, 0.08), 0 3px 8px rgba(40, 25, 45, 0.04);
+    }
+
+    .template-icons {
+        min-height: 100vh;
+        width: 600px;
+        background: url("assets/images/cards.png") no-repeat;
+        background-size: cover;
+    }
+
+    @media screen and (max-width: 992px) {
+        .container {
+            height: 100vh;
+            padding: 0 40px;
+        }
+        .error-text-wrapper {
+            margin: auto;
+        }
+        .template-icons {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .container {
+            height: 100vh;
+            padding: 0 40px;
+        }
+
+        .error-text-wrapper {
+            margin: auto;
+        }
+
+        .template-icons {
+            width: 585px;
+        }
+    }
+</style>
+
+<section id="block-404">
+
+    <div class="container">
+        <div class="error-text-wrapper">
+            <div class="company-title"></div>
+            <div class="error-title">
+                404 - Page not found
+            </div>
+            <div class="error-text">
+                Learn how to <a href="https://docs.softr.io/studio/pages/how-to-set-up-a-404-page">customize this
+                page</a>.
+            </div>
+            <div class="error-text">
+                While you're here, this page is built on Softr, the easiest <br>
+                way to build applications without code.
+            </div>
+            <button class="home-button" onclick="location.href = '/'">Back to application</button>
+        </div>
+        <div class="template-icons"></div>
+    </div>
+
+</section>
+</div>
+
+            <div class="made-with-softr">
+                <a href="https://www.softr.io/?via=madewithbadge" target="_blank" title="Client Portal | Internal Tools | Web App Builder | Free Website Builder">
+                    <img src="https://softr-assets-eu-shared.s3.eu-central-1.amazonaws.com/studio/blocks/assets/softr_logo_icon_only.svg" alt="Client Portal | Internal Tools | Web App Builder | Free Website Builder">
+                    <span class="made-with">Made with</span>
+                    <span class="softr-word">Softr</span>
+                </a>
+            </div>
+            <script>
+                (() => {
+                  function rgb2hex(orig) {
+                    var rgb = orig.replace(/\s/g, "").match(/^rgba?\((\d+),(\d+),(\d+)/i);
+                    return rgb && rgb.length === 4
+                      ? "#" +
+                          ("0" + parseInt(rgb[1], 10).toString(16)).slice(-2) +
+                          ("0" + parseInt(rgb[2], 10).toString(16)).slice(-2) +
+                          ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2)
+                      : orig;
+                  }
+
+                  function lightOrDark(color) {
+                    // Variables for red, green, blue values
+                    var r, g, b, hsp;
+
+                    // Check the format of the color, HEX or RGB?
+                    if (color.match(/^rgb/)) {
+                      // If RGB --> store the red, green, blue values in separate variables
+                      color = color.match(
+                        /^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/
+                      );
+
+                      r = color[1];
+                      g = color[2];
+                      b = color[3];
+                    } else {
+                      // If hex --> Convert it to RGB: http://gist.github.com/983661
+                      color = +(
+                        "0x" + color.slice(1).replace(color.length < 5 && /./g, "$&$&")
+                      );
+
+                      r = color >> 16;
+                      g = (color >> 8) & 255;
+                      b = color & 255;
+                    }
+
+                    // HSP (Highly Sensitive Poo) equation from http://alienryderflex.com/hsp.html
+                    hsp = Math.sqrt(0.299 * (r * r) + 0.587 * (g * g) + 0.114 * (b * b));
+
+                    // Using the HSP value, determine whether the color is light or dark
+                    if (hsp > 127.5) {
+                      return "light";
+                    } else {
+                      return "dark";
+                    }
+                  }
+
+                  function createBudgetWrapperDivEl() {
+                    const divEl = document.createElement("div");
+                    divEl.setAttribute("class", "made-with-softr");
+
+                    divEl.style.setProperty('display', 'block', 'important');
+                    divEl.style.setProperty('opacity', '1', 'important');
+                    divEl.style.setProperty('visibility', 'visible', 'important');
+
+                    divEl.innerHTML = `
+                   <a href="https://www.softr.io/?via=madewithbadge" target="_blank" title="Client Portal | Internal Tools | Web App Builder | Free Website Builder">
+                      <img src="https://softr-assets-eu-shared.s3.eu-central-1.amazonaws.com/studio/blocks/assets/softr_logo_icon_only.svg" alt="Client Portal | Internal Tools | Web App Builder | Free Website Builder">
+                      <span class="made-with">Made with</span>
+                      <span class="softr-word">Softr</span>
+                    </a>`;
+                    document.body.appendChild(divEl);
+                  }
+
+                  function isInCurrentSection(elTop, elBottom) {
+                    const innerHeight = window.innerHeight - 30;
+                    return elTop < innerHeight && elBottom > innerHeight;
+                  }
+
+                  function setRightTheme(sections, softrEl) {
+                    sections.forEach(item => {
+                      const elementTop = item.getBoundingClientRect().top;
+                      const elementBottom = item.getBoundingClientRect().bottom;
+
+                      if (isInCurrentSection(elementTop, elementBottom)) {
+                        const documentBodyColor = window
+                          .getComputedStyle(item)
+                          .getPropertyValue("background-color");
+
+                        const bgColor = lightOrDark(rgb2hex(documentBodyColor));
+
+                        if (bgColor === "light") {
+                          softrEl.classList.add("dark-theme");
+                        } else {
+                          softrEl.classList.remove("dark-theme");
+                        }
+                      }
+                    });
+                  }
+
+                  function isHidden(el) {
+                    if(!el) {
+                        return true;
+                    }
+                    const style = window.getComputedStyle(el);
+                    return (style.display === 'none');
+                  }
+
+                  function init() {
+	                  const madeWithSoftrEl = document.querySelector(".made-with-softr");
+	                  const softrEl = document.querySelector(".made-with-softr a");
+
+	                  if (!madeWithSoftrEl) {
+		                  createBudgetWrapperDivEl();
+	                  }
+
+	                  if (!softrEl && madeWithSoftrEl) {
+		                  madeWithSoftrEl.remove();
+		                  createBudgetWrapperDivEl();
+	                  }
+
+	                  if (isHidden(madeWithSoftrEl) || isHidden(softrEl)) {
+		                  madeWithSoftrEl.remove();
+		                  createBudgetWrapperDivEl();
+	                  }
+
+
+	                  const headers = document.querySelectorAll("header");
+	                  const sections = document.querySelectorAll("section");
+	                  const footers = document.querySelectorAll("footer");
+	                  const allSections = [...headers, ...sections, ...footers];
+	                  setRightTheme(allSections, softrEl);
+
+	                  document.addEventListener("scroll", () => {
+		                  setRightTheme(allSections, softrEl);
+	                  });
+                  }
+
+	                function removeLogoWithSoftr() {
+		                if (location.origin === 'https://www.softr.io') {
+			                if (document.body.clientWidth <= 576) {
+			                  /* Disable for now we need better solution */
+				              /*  document.getElementsByClassName('made-with-softr')[0].style.display = 'none'; */
+			                }
+		                }
+	                }
+	                init();
+	                removeLogoWithSoftr();
+	                setInterval(() => {
+		                init();
+		                removeLogoWithSoftr();
+	                }, (Math.floor(2 + Math.random() * 5)) * 1000);
+                })();
+            </script>
+
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            if(window.jQuery && window.jQuery.ajaxSetup) {
+                window.jQuery.ajaxSetup({
+                    beforeSend: function(xhr, settings) {
+                        if(settings && settings.url && (settings.url.includes('/integrations/airtable/') || settings.url.includes('/v1/applications/f165e56b-ac58-475b-a490-c6e08359a817')
+                        || settings.url.includes('/v1/comments'))){
+                            xhr.setRequestHeader('softr-page-id', '');
+                        }
+                    }
+                });
+            }
+
+            
+        </script>
+
+        
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.contentWindow.js" crossorigin="anonymous"></script>
+    </body>
+
+</html>
